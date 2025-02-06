@@ -37,6 +37,6 @@ const videoSchema = new Schema<VideoDetails>(
   { timestamps: true }
 );
 
-const User = models?.Video || model<VideoDetails>("Video", videoSchema) // checks if model has already been created
+const Video = models?.Video || model<VideoDetails>("Video", videoSchema) // checks if model has already been created
 
-export default User
+export default Video
